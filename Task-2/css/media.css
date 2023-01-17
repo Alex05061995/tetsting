@@ -1,0 +1,30 @@
+@media (max-width: 1200px) {
+    .block__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .block__product:nth-child(3n) {
+        grid-column: 1/3;
+    }
+
+
+}
+
+@media (max-width: 730px) {
+    .block__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .block__product {
+        width: 250px;
+        min-height: 400px;
+    }
+
+    .block__product:nth-child(3n) {
+        grid-column: auto;
+    }
+
+    .product {
+        padding: 20px 30px;
+    }
+}

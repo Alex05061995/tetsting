@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/Exo2.0-Thin.otf') format('opentype');
+}
+
+body {
+    font-family: 'Exo';
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url('../img/Pattern@1x.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.product {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+.block__title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 1px #000000;
+}
+
+.block__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.block__product {
+    padding: 20px 51px;
+    box-sizing: border-box;
+    position: relative;
+    width: 320px;
+    min-height: 508px;
+    background-image: url('../img/block@1x.png');
+    background-size: contain;
+    background-position: left -30px bottom -65px;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.product__slang {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+}
+
+.product-1__name {
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+}
+
+.product__taste {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.product-1__portion,
+.product__present {
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+}
+
+.product__weightCount,
+.product__weightNumber {
+    font-size: 42px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.product__weight {
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background-color: #1698D9;
+}
+
+.product__weightNumber {
+    margin-bottom: 5px;
+}
+
+.product__phrase {
+    position: absolute;
+    bottom: -20px;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.product__phrase a {
+    text-decoration: underline dotted;
+    color: #1698D9;
+}
+
+.block__product:hover {
+    border: 3px solid #D91667;
+}
+
+.block__product:hover .product__weight {
+    background-color: #D91667;
+}
+
+.block__product[data-available='false'],
+.block__product[data-available='false'] a {
+    opacity: 0.7;
+    cursor: context-menu;
+    pointer-events: none;
+}
