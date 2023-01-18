@@ -16,7 +16,6 @@
     }
 
     .block__product {
-        width: 250px;
         min-height: 400px;
     }
 
@@ -25,6 +24,17 @@
     }
 
     .product {
-        padding: 20px 30px;
+        padding: 25px 25px;
     }
+
+    .block__product:hover .product__border {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #D91667;
+        top: 0;
+        right: 103px;
+        transform: rotate(-45deg);
+    } 
 }
