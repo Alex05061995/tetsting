@@ -60,6 +60,7 @@ body {
     background-position: left -30px bottom -65px;
     background-repeat: no-repeat;
     background-color: #FFFFFF;
+    border-radius: 10px;
 }
 
 .product__slang {
