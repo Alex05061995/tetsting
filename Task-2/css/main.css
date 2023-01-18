@@ -61,6 +61,7 @@ body {
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     border-radius: 10px;
+    clip-path: polygon(0 15%, 19% 0, 100% 0, 100% 126%, 0% 100%);
 }
 
 .product__slang {
@@ -144,4 +145,43 @@ body {
     opacity: 0.7;
     cursor: context-menu;
     pointer-events: none;
+}
+
+.product__border {
+    display: none;
+}
+
+.block__product:hover .product__border {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #D91667;
+    top: 0;
+    right: 103px;
+    transform: rotate(-52deg);
+} 
+
+.border-none {
+    border: none;
+}
+
+.display-none {
+    display: none;
+    
+}
+
+.display-block {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #D91667;
+    top: 0;
+    right: 103px;
+    transform: rotate(-52deg);
+}
+
+.border {
+    border: 3px solid #D91667;
 }
